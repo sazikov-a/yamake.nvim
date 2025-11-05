@@ -5,7 +5,7 @@ function M.setup()
     local parsers = require('nvim-treesitter.parsers')
 
     M.arc_root = arc.root()
-    M.parsers = parsers.get_parser_config()
+    M.parsers = parsers.get_parser_configs()
 
     vim.filetype.add({
         filename = {
